@@ -2,7 +2,7 @@ import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import { verifyPassword } from '../../../lib/auth';
 
-export default NextAuth({
+export const authOptions = {
   providers: [
     CredentialsProvider({
       async authorize(credentials, req) {
@@ -27,5 +27,8 @@ export default NextAuth({
       },
     }),
   ],
+  secret: process.env.AUTH_SECRET,
   session: { jwt: true },
-});
+};
+
+export default NextAuth(authOptions);
