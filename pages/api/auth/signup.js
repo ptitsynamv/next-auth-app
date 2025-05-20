@@ -10,8 +10,9 @@ async function handler(req, res) {
     }
 
     const existing = await fetch(`http://localhost:3001/users?email=${email}`);
+    const existingData = await existing.json();
 
-    if (existing) {
+    if (existingData.length) {
       res.status(422).json({ message: 'User exists' });
       return;
     }

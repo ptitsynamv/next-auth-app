@@ -4,6 +4,11 @@
       "id": "d316",
       "email": "mail@mail.com",
       "password": "$2a$12$t6R5HBPJMkNyTRfuVbJoP.Xy01kZVRgApdqIQD4TTYgkWQlcFRfcW"
+    },
+    {
+      "id": "3abb",
+      "email": "mail2@mail.com",
+      "password": "$2a$12$2Hh0XbbhrB0DRj0i/JJr4.shIOSVhGEK5WtlgwoATLTpjLHCd15lq"
     }
   ]
 }
